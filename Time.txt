@@ -1,0 +1,57 @@
+// Jonathan & Breno Sobral
+
+package encapsulamento;
+
+public class Time {
+    private String Nome;
+    private int qtdVitorias;
+    private int qtdEmpates;
+    private int qtdDerrotas;
+
+    public Time(String Nome, int qtdVitorias, int qtdEmpates, int qtdDerrotas) {
+        this.Nome = Nome;
+        this.qtdVitorias = qtdVitorias;
+        this.qtdEmpates = qtdEmpates;
+        this.qtdDerrotas = qtdDerrotas;
+    }
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public void setNome(String Nome) {
+        this.Nome = Nome;
+    }
+
+    public int getQtdVitorias() {
+        return qtdVitorias;
+    }
+
+    public void setQtdVitorias(int qtdVitorias) {
+        this.qtdVitorias = qtdVitorias;
+    }
+
+    public int getQtdEmpates() {
+        return qtdEmpates;
+    }
+
+    public void setQtdEmpates(int qtdEmpates) {
+        this.qtdEmpates = qtdEmpates;
+    }
+
+    public int getQtdDerrotas() {
+        return qtdDerrotas;
+    }
+
+    public void setQtdDerrotas(int qtdDerrotas) {
+        this.qtdDerrotas = qtdDerrotas;
+    }
+
+    @Override
+    public String toString() {
+       return Nome + ":" + qtdVitorias + ":" + qtdEmpates + ":" + qtdDerrotas;
+    }
+    
+    
+      
+}

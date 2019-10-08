@@ -1,0 +1,68 @@
+// Jonathan & Breno Sobral
+
+package encapsulamento;
+import java.util.Date;
+
+public class Partida {
+    private String timeVisitante;
+    private String timeLocal;
+    private int scoreVisitante;
+    private int scoreLocal;
+    private Date dataPartida;
+
+    public Partida(String timeVisitante, String timeLocal, int scoreVisitante, int scoreLocal, Date dataPartida) {
+        this.timeVisitante = timeVisitante;
+        this.timeLocal = timeLocal;
+        this.scoreVisitante = scoreVisitante;
+        this.scoreLocal = scoreLocal;
+        this.dataPartida = dataPartida;
+    }
+
+    public String getTimeVisitante() {
+        return timeVisitante;
+    }
+
+    public void setTimeVisitante(String timeVisitante) {
+        this.timeVisitante = timeVisitante;
+    }
+
+    public String getTimeLocal() {
+        return timeLocal;
+    }
+
+    public void setTimeLocal(String timeLocal) {
+        this.timeLocal = timeLocal;
+    }
+
+    public int getScoreVisitante() {
+        return scoreVisitante;
+    }
+
+    public void setScoreVisitante(int scoreVisitante) {
+        this.scoreVisitante = scoreVisitante;
+    }
+
+    public int getScoreLocal() {
+        return scoreLocal;
+    }
+
+    public void setScoreLocal(int scoreLocal) {
+        this.scoreLocal = scoreLocal;
+    }
+
+    public Date getDataPartida() {
+        return dataPartida;
+    }
+
+    public void setDataPartida(Date dataPartida) {
+        this.dataPartida = dataPartida;
+    }
+
+    @Override
+    public String toString() {
+        return timeVisitante + ":" + scoreVisitante + ":" + scoreLocal + ":" + timeLocal;
+    }
+    
+     
+    
+}
